@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Movies and Giphy APIs - Ousmane and Michael</title>
   </head>
   <body>
@@ -10,7 +17,16 @@
       <input type="text" id="search-keyword" />
       <button id="search-button">Search for Movies</button>
     </form>
-    <div id="card-container"></div>
+    <div id="card-container">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <button class="btn btn-primary">Go somewhere</button>
+          <button class="btn btn-primary">Go somewhere</button>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
