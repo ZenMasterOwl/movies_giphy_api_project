@@ -82,7 +82,7 @@ function handleMovies(event) {
   let searchKey = parentNode.childNodes.item(0).innerText;
 
   // Make an call to the omdb api - concatenate our search key into the url to retrieve our filtered object
-  fetch("http://www.omdbapi.com/?apikey=c0abe2e5&" + "s=" + searchKey)
+  fetch("https://www.omdbapi.com/?apikey=c0abe2e5&" + "s=" + searchKey)
     .then((response) => response.json())
     // The api passes a data object into a function that creates cards
     .then((data) => createResultsCard(data, buttonIndicator));
